@@ -1,0 +1,25 @@
+img.logo {
+  width: 38px;
+  margin: auto;
+}
+
+.navbar-brand {
+  width: 50%;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+footer {
+  color: #005caf;
+  font-size: 0.875rem;
+  border-top: 1px solid #005caf;
+}
