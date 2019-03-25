@@ -1,8 +1,6 @@
-img.logo {
-  width: 38px;
-  margin: auto;
+.social-link a{
+  color:rgba(0,0,0,.9);
 }
-
 .navbar-brand {
   width: 50%;
 }
