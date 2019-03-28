@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <title>Book search application</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md text-center">
+                    <h3 class="mt-2">Book search application using language</h3>
+                    <input type="text" class="form-control"
+                        placeholder="Enter the languge for book search"
+                        id="inputText">
+                    <button type="button" class="btn btn-primary mt-4"
+                        id="inputButton">Search</button>
+                    <br> <br>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">author</th>
+                                <th scope="col">country</th>
+                                <th scope="col">link</th>
+                                <th scope="col">pages</th>
+                                <th scope="col">title</th>
+                                <th scope="col">year</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <tr>
+                                <td id="author"></td>
+                                <td id="country"></td>
+                                <td id="link"></td>
+                                <td id="pages"></td>
+                                <td id="title"></td>
+                                <td id="year"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
