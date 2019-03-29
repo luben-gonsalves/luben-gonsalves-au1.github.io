@@ -3,8 +3,9 @@
 var inputButton = document.getElementById("inputButton");
 
 var updateContent = contentData => {
+  var tbody = document.getElementById("tbody");
+  tbody.innerHTML = "";
   for (var i = 0; i < contentData.length; i++) {
-    var tbody = document.getElementById("tbody");
     var tr = document.createElement("tr");
     tbody.appendChild(tr);
 
