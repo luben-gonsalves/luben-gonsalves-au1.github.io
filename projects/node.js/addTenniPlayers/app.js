@@ -1,4 +1,4 @@
-"use strict";
+	"use strict";
 
 // Include express in our application
 var express = require("express");
