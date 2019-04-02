@@ -99,13 +99,13 @@ app.post("/students/add", function(request, response) {
   var phone = request.body.phone;
   var batch = request.body.batch;
 
-  var newInstructor = {
+  var newStudent = {
     name: name,
     phone: phone,
     batch: batch
   };
 
-  DB.collection("students").insertOne(newInstructor, function(error, result) {
+  DB.collection("students").insertOne(newStudent, function(error, result) {
     if (error) {
       console.log(
         "error occured while inserting data into the students collection"
