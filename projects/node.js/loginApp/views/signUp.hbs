@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login App</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+    </head>
+    <body>
+        {{!-- navrbar --}}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse d-flex justify-content-end"
+                id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SignUp </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        {{!-- signUp form --}}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center offset-md-4">
+                    <h3>Sign Up here</h3>
+                    {{#if emailTaken}}
+                    <div class="alert alert-danger" role="alert">
+                        Sign Up failed,email already taken
+                    </div>
+                    {{/if}}
+                    <form action="/signUp" method="POST">
+                        <label for="name"></label>
+                        <input type="text" class="form-control" id="name"
+                            name="name" placeholder="enter your name" required>
+                        <label for="email"></label>
+                        <input type="email" class="form-control" id="email"
+                            name="email" placeholder="enter your email"
+                            required>
+                        <label for="password"></label>
+                        <input type="password" class="form-control"
+                            id="password"
+                            name="password" placeholder="enter your password"
+                            required>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                    {{#if failed}}
+                    <div class="alert alert-success" role="alert">
+                        Sign Up failed,please Sign up again
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
