@@ -7,6 +7,8 @@ var updateContent = function(data) {
   }
 };
 
+var cities=[];
+
 var loadContent = function() {
   // Create an ajax object
   var request = new XMLHttpRequest();
@@ -27,3 +29,11 @@ var loadContent = function() {
 };
 
 loadContent();
+
+cities=[];
+var letter(letter){
+	for(i=0;i<cities.length;i++){
+	if(cities[i]["name"][0]==letter){
+	cities.["name"]
+	
+}
